@@ -9,6 +9,9 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        //FindObjectOfType<PlayerDialogue>().StartDialogue(dialogue);
+        //FindObjectOfType<MindDialogue>().StartDialogue(dialogue);
+        //FindObjectOfType<ClassmatesDialogue>().StartDialogue(dialogue);
     }
    
 }
