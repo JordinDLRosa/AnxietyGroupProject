@@ -7,9 +7,6 @@ public class DialogueManager : MonoBehaviour
     
     public Text nameText;
     public Text dialogueText;
-    public Text playerText;
-    public Text mindText;
-    public Text classmateText;
     private Queue<string> sentences; //First in First Out. Load new sentences past each queue 
     void Start()
     {
@@ -19,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     {
         nameText.text = dialogue.name;
         sentences.Clear();
-        playerText.text = dialogue.player;
+
 
 
         foreach (string sentence in dialogue.sentences)

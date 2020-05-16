@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 public class PlayerScale : MonoBehaviour
@@ -13,6 +15,14 @@ public class PlayerScale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown ("s"))
+        {
+            transform.localScale = new Vector3 (3, 3, 1);
+        }
+        else if(Input.GetKeyDown ("a"))
+        {
+            transform.localScale = new Vector3 (2, 2, 1);
+        }
         
     }
 }

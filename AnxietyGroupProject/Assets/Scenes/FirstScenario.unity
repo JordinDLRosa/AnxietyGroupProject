@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309906204}
   - component: {fileID: 309906203}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,9 +152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Samantha (Orange Circle)
-    player: 
-    mind: 
-    classmates: 
     sentences:
     - Good...afternoon class, I will be presenting on what... c-c-c-ame first, the
       chicken or ... the egg?
@@ -611,7 +608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890625981}
   - component: {fileID: 890625980}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ClassmatesDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,9 +629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Classmates(Green Circle)
-    player: 
-    mind: 
-    classmates: 
     sentences:
     - Clap Clap Clap***
 --- !u!4 &890625981
@@ -749,6 +743,7 @@ GameObject:
   - component: {fileID: 1029670959}
   - component: {fileID: 1029670961}
   - component: {fileID: 1029670960}
+  - component: {fileID: 1029670962}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -811,6 +806,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029670958}
   m_CullTransparentMesh: 0
+--- !u!114 &1029670962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029670958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fb2230da23077439489e40dd2647b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1119652073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,9 +1249,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Teacher (Red Circle)
-    player: Samantha
-    mind: Samantha's Mind
-    classmates: Classmates
     sentences:
     - Good afternoon Class, we have Samantha getting ready to present her powerpoint.
       Take it away, Samantha.
@@ -1487,9 +1491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1579163283}
   dialogueText: {fileID: 823265513}
-  playerText: {fileID: 0}
-  mindText: {fileID: 0}
-  classmateText: {fileID: 0}
 --- !u!4 &1552929433
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,7 +1818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110700968}
   - component: {fileID: 2110700967}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MindDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1838,9 +1839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Samantha's Mind
-    player: 
-    mind: 
-    classmates: 
     sentences:
     - She's going to start stuttering. Look at her all sweaty and she's trembling
       lol
