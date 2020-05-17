@@ -4,28 +4,24 @@ using UnityEngine;
 
 public class TextScript : MonoBehaviour
 {
-
+    GameManager gm;
 
     // Start is called before the first frame update
     void Start()
     {
-
-     }
+            gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+            print(gm.name);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
-  
+
     }
 
-public void OnCollisionEnter2D(Collision2D col)
-{
-     if (col.gameObject.tag == "Positive")
-     {
-        var TextScript = col.gameObject.GetComponent<TextScript>();
-        
-      }
-
-   }
+    //private object DisappearFromScreen()
+    //{
+    //    Destroy(gameObject);
+    //    gm.SpawnPositive;
+    //}
 }

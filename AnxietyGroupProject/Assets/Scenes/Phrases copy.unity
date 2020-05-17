@@ -150,9 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efa5ba1d0ccd40b9985e06242aeb9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text1Prefab: {fileID: 5043584489167976898, guid: 672297733ecb44cf7a280f910ccb3155,
+  Negative: {fileID: 5043584489167976898, guid: 672297733ecb44cf7a280f910ccb3155,
     type: 3}
-  Positive1Prefab: {fileID: 3007826211611928929, guid: f3ba37af47da3430694804deac1b8707,
+  Positive: {fileID: 3007826211611928929, guid: f3ba37af47da3430694804deac1b8707,
     type: 3}
 --- !u!4 &1538967731
 Transform:
