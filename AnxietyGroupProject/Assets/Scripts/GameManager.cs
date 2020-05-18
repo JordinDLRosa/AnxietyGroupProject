@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     GameObject Text1Prefab;
@@ -13,21 +14,17 @@ public class GameManager : MonoBehaviour
         Positive1Prefab = Resources.Load<GameObject>("Positive1") as GameObject;
 
     }
+
     // Update is called once per frame
     void Update()
     {
-        //Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        //Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-        Vector2 pos = new Vector2(Random.Range(-7.0f, 7.0f), Random.Range(-7.0f, 6.0f));
+
+
+        Vector2 pos = new Vector2(Random.Range(-7.0f, 7.0f), Random.Range(-7.0f, 4.0f));
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(Text1Prefab, pos, Quaternion.identity);
         }
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Destroy(Text1Prefab);
-        //    Instantiate(Positive1Prefab, worldPosition, Quaternion.identity);
-        //}
 
         if (Input.GetMouseButtonDown(0))
         {
